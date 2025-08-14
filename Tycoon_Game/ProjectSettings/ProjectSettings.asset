@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 170c28ecec7104c40b65c4e5c338c3ed
+  productGUID: cd2bec48b946ec247a9a5f962fb75bbf
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -755,10 +755,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 2a44a670-56a7-4776-9b8e-df0661727779
+  cloudProjectId: fa68bb81-2e2c-4087-a6e3-75f6101fb1fc
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tycoon_Game
+  projectName: Tycoon_Game 2025-08-14_16-57-11
   organizationId: sterscrim
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
