@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem shootingSystem;
+    [SerializeField] private ParticleSystem shootingParticleSystem;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private ParticleSystem impactParticelSystem;
     [SerializeField] TrailRenderer bulletTrail;
     [SerializeField] LayerMask mask;
 
-    public void Shoot()
+    public void Shoot(int damage)
     {
-        shootingSystem.Play();
+        shootingParticleSystem.Play();
         Vector3 direction = transform.forward;
         if (Physics.Raycast(bulletSpawnPoint.position, direction, out RaycastHit hit, float.MaxValue, mask))
         {
             TrailRenderer trail = Instantiate(bulletTrail, bulletSpawnPoint.position, Quaternion.identity);
 
             StartCoroutine(SpawnTrail(trail, hit));
+
+            Enemy enemy = hit.collider.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
         }
     }
 
@@ -35,8 +41,10 @@ public class Gun : MonoBehaviour
             yield return null;
         }
         trail.transform.position = hit.point;
-        Instantiate(impactParticelSystem, hit.point, Quaternion.LookRotation(hit.normal));
+        ParticleSystem impact = Instantiate(impactParticelSystem, hit.point, Quaternion.LookRotation(hit.normal));
 
-        Destroy(trail.gameObject, trail.time);
+        Destroy(impact.gameObject, impact.main.duration);
+
+        Destroy(trail.gameObject, 0.5f);
     }
 }

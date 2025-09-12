@@ -6,13 +6,28 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] private float range = 5f;
     [SerializeField] private List<GameObject> enemiesInRange = new List<GameObject>();
     [SerializeField] private LayerMask detectionLayer;
+    [SerializeField] private Gun gun;
+    [SerializeField] private float delay = 1f;
+    [SerializeField] private int damage = 1;
+
+    private float shootTimer = 0f;
+
 
     private void Update()
     {
         UpdateEnemiesInRange();
+
         if(enemiesInRange.Count > 0)
         {
             this.transform.LookAt(enemiesInRange[0].transform);
+
+            shootTimer += Time.deltaTime;
+
+            if (shootTimer >= delay)
+            {
+                gun.Shoot(damage);
+                shootTimer = 0f;
+            }
         }
     }
 
@@ -42,11 +57,17 @@ public class TowerLogic : MonoBehaviour
         // Remove enemies that are no longer in range
         for (int i = enemiesInRange.Count - 1; i >= 0; i--)
         {
+            if (enemiesInRange[i] == null)
+            {
+                enemiesInRange.RemoveAt(i);
+                continue;
+            }
             if (!currentEnemies.Contains(enemiesInRange[i]))
             {
                 Debug.Log("Enemy left range: " + enemiesInRange[i].name);
                 RemoveEnemy(enemiesInRange[i]);
             }
+
         }
     }
     public void RemoveEnemy(GameObject enemy)

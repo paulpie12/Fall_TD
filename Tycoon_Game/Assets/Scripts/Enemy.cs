@@ -24,10 +24,15 @@ public class Enemy : MonoBehaviour
     {
         Health -= damageAmount;
         healthBar.UpdateHealthBar(Health, MaxHealth);
-        if (Health < 0) 
+        if (Health <= 0) 
         {
-            
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 
 }
