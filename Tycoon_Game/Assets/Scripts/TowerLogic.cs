@@ -10,6 +10,10 @@ public class TowerLogic : MonoBehaviour
     private void Update()
     {
         UpdateEnemiesInRange();
+        if(enemiesInRange.Count > 0)
+        {
+            this.transform.LookAt(enemiesInRange[0].transform);
+        }
     }
 
     private void UpdateEnemiesInRange()
@@ -41,9 +45,13 @@ public class TowerLogic : MonoBehaviour
             if (!currentEnemies.Contains(enemiesInRange[i]))
             {
                 Debug.Log("Enemy left range: " + enemiesInRange[i].name);
-                enemiesInRange.RemoveAt(i);
+                RemoveEnemy(enemiesInRange[i]);
             }
         }
+    }
+    public void RemoveEnemy(GameObject enemy)
+    {
+        enemiesInRange.Remove(enemy);
     }
 
     private void OnDrawGizmos()

@@ -357,6 +357,7 @@
 -analyzer:"D:/unity/2022.3.52f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/FloatingHealthBar.cs"
+"Assets/Scripts/Gun.cs"
 "Assets/Scripts/TowerLogic.cs"
 "Assets/Scripts/Unused/CameraControl.cs"
 "Assets/Scripts/Unused/PlayerInputSystem.cs"
