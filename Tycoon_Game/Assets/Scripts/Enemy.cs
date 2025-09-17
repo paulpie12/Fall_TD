@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] FloatingHealthBar healthBar;
 
+    public int CurrentHealth => Health;
+
     private void Awake()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();

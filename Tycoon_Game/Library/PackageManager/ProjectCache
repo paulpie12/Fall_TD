@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638913189122771873
-    m_Hash: 1007612587
+      ticks: 638937294676066110
+    m_Hash: 1414175969
   m_LockFileStatus:
     m_FilePath: D:/Desktop/Git/Tycoon_Game/Tycoon_Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638913189124352513
-    m_Hash: 1201262170
+      ticks: 638937294676516781
+    m_Hash: 2668992398
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,106 @@ m_LocalPackages:
 m_ProjectPath: D:/Desktop/Git/Tycoon_Game/Tycoon_Game/Packages
 m_EditorVersion: 2022.3.52f1 (1120fcb54228)
 m_ResolvedPackages:
+- packageId: com.unity.ai.navigation@1.1.7
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.7
+  source: 1
+  resolvedPath: D:\Desktop\Git\Tycoon_Game\Tycoon_Game\Library\PackageCache\com.unity.ai.navigation@1.1.7
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    - 1.1.3
+    - 1.1.4
+    - 1.1.5
+    - 1.1.6
+    - 1.1.7
+    - 2.0.0-pre.3
+    - 2.0.0-pre.4
+    - 2.0.0
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.8
+    - 2.0.9
+    compatible:
+    - 1.1.5
+    - 1.1.6
+    - 1.1.7
+    recommended: 1.1.7
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords:
+  - carving
+  - mesh
+  - navigation
+  - navmesh
+  - NavMesh
+  - navmesh agent
+  - navmesh link
+  - navmeshlink
+  - navmesh modifier
+  - navmeshmodifier
+  - navmesh modifier volume
+  - navmeshmodifiervolume
+  - navmesh obstacle
+  - navmesh surface
+  - navmeshsurface
+  - offmesh link
+  - off-mesh link
+  - pathfinding
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638869705370690000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: 5a9f1f66840e719f7676c7c8925357450baae713
+    path: 
+  unityLifecycle:
+    version: 1.1.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+  fingerprint: 
 - packageId: com.unity.collab-proxy@2.9.1
   testable: 0
   isDirectDependency: 1
@@ -124,6 +224,8 @@ m_ResolvedPackages:
     - 2.8.1
     - 2.8.2
     - 2.9.1
+    - 2.9.2
+    - 2.9.3
     compatible:
     - 2.5.2
     - 2.6.0
@@ -131,6 +233,8 @@ m_ResolvedPackages:
     - 2.8.1
     - 2.8.2
     - 2.9.1
+    - 2.9.2
+    - 2.9.3
     recommended: 2.5.2
     deprecated: []
   dependencies: []
@@ -542,6 +646,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.10
     - 3.2.0-pre.11
     - 3.2.0-pre.12
+    - 3.2.0-pre.13
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -560,6 +665,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.10
     - 3.2.0-pre.11
     - 3.2.0-pre.12
+    - 3.2.0-pre.13
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.9
@@ -3059,11 +3165,13 @@ m_ResolvedPackages:
     - 3.0.34
     - 3.0.35
     - 3.0.36
+    - 3.0.37
     compatible:
     - 3.0.34
     - 3.0.35
     - 3.0.36
-    recommended: 3.0.36
+    - 3.0.37
+    recommended: 3.0.37
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -3197,9 +3305,11 @@ m_ResolvedPackages:
     - 0.1.0-preview.1
     - 0.1.0-preview.2
     - 1.0.0
+    - 1.0.1
     compatible:
     - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -3505,9 +3615,11 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     - 1.2.6
+    - 1.2.7
     compatible:
     - 1.2.6
-    recommended: 1.2.6
+    - 1.2.7
+    recommended: 1.2.7
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
