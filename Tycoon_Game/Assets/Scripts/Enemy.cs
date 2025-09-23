@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private int Health = 10;
     [SerializeField] private int MaxHealth = 10;
+    [SerializeField] private int PointAmount = 10;
+
+    private UpgradeSystem upgradeSystem;
 
     [SerializeField] FloatingHealthBar healthBar;
 
@@ -14,6 +17,7 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
+        upgradeSystem = FindObjectOfType<UpgradeSystem>();
     }
 
     private void Start()
@@ -32,8 +36,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
+        upgradeSystem.AddPoints(PointAmount);
         Destroy(gameObject);
     }
 

@@ -25,6 +25,7 @@ public class BaseLogic : MonoBehaviour
             {
                 enemyHealth = enemy.CurrentHealth;
                 TakeDamage(enemyHealth);
+                enemy.Die();
             }
         }
     }
@@ -35,7 +36,7 @@ public class BaseLogic : MonoBehaviour
         healthBar.UpdateHealthBar(Health, MaxHealth);
         if(Health >= 0)
         {
-            //create new script for game lose
+            //create logic for game lose
         }
 
     }

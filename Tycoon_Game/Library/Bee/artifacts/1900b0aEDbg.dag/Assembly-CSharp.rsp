@@ -367,6 +367,7 @@
 "Assets/Scripts/TowerLogic.cs"
 "Assets/Scripts/Unused/CameraControl.cs"
 "Assets/Scripts/Unused/PlayerInputSystem.cs"
+"Assets/Scripts/UpgradeSystem.cs"
 -langversion:9.0
 /deterministic
 /optimize-
