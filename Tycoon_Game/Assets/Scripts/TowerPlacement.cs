@@ -8,6 +8,7 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private LayerMask PlacementCheckMask;
     [SerializeField] private LayerMask PlacementCollideMask;
     [SerializeField] private Camera Playercamera;
+    [SerializeField] private TowerLogic TowerLogic;
 
     private GameObject CurrentPlacingTower;
 
@@ -28,6 +29,7 @@ public class TowerPlacement : MonoBehaviour
             // So HitInfo retains its value after a successful raycast.
             if (Input.GetMouseButtonDown(0))
             {
+
                 // Only place if we have a valid hit
                 if (HitInfo.collider != null && !HitInfo.collider.gameObject.CompareTag("CantPlace"))
                 {
@@ -39,6 +41,7 @@ public class TowerPlacement : MonoBehaviour
                     if (!Physics.CheckBox(bounds.center, bounds.extents, Quaternion.identity, PlacementCheckMask, QueryTriggerInteraction.Ignore))
                     {
                         TowerCollider.isTrigger = false;
+                        CurrentPlacingTower.GetComponent<TowerLogic>().Placed = true;
                         CurrentPlacingTower = null;
                     }
                 }
@@ -49,5 +52,6 @@ public class TowerPlacement : MonoBehaviour
     public void SetTowerToPlace(GameObject tower)
     {
         CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
+        CurrentPlacingTower.GetComponent<TowerLogic>().Placed = false;
     }
 }

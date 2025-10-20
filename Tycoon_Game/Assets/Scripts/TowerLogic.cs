@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class TowerLogic : MonoBehaviour
 {
@@ -9,9 +11,16 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] private Gun gun;
     [SerializeField] private float delay = 1f;
     [SerializeField] private int damage = 1;
+    [SerializeField] Button button;
+
+    public bool Placed = true;
 
     private float shootTimer = 0f;
 
+    private void Awake()
+    {
+        button.gameObject.SetActive(false);
+    }
 
     private void Update()
     {
@@ -23,7 +32,7 @@ public class TowerLogic : MonoBehaviour
 
             shootTimer += Time.deltaTime;
 
-            if (shootTimer >= delay)
+            if (shootTimer >= delay && Placed == true)
             {
                 gun.Shoot(damage);
                 shootTimer = 0f;
@@ -85,4 +94,16 @@ public class TowerLogic : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 5);
     }
+    private void OnMouseDown()
+    {
+        if (button.isActiveAndEnabled && Placed == true)
+        {
+            button.gameObject.SetActive(false);
+        }
+        else if (!button.isActiveAndEnabled && Placed == true)
+        {
+            button.gameObject.SetActive(true);
+        }
+    }
+
 }
