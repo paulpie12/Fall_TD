@@ -10,11 +10,18 @@ public class PointSystem : MonoBehaviour
 
     private void Start()
     {
+        totalPoints = 250;
         points.text = "Points:" + totalPoints;
     }
     public void AddPoints(int points)
     {
         totalPoints += points;
+        UpdateTotal();
+    }
+
+    public void RemovePoints(int points)
+    {
+        totalPoints -= points;
         UpdateTotal();
     }
 

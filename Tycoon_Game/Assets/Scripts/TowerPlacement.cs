@@ -9,6 +9,7 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private LayerMask PlacementCollideMask;
     [SerializeField] private Camera Playercamera;
     [SerializeField] private TowerLogic TowerLogic;
+    [SerializeField] private PointSystem pointsystem;
 
     private GameObject CurrentPlacingTower;
 
@@ -49,9 +50,13 @@ public class TowerPlacement : MonoBehaviour
         }
     }
 
-    public void SetTowerToPlace(GameObject tower)
+    public void SetTower1ToPlace(GameObject tower)
     {
-        CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
-        CurrentPlacingTower.GetComponent<TowerLogic>().Placed = false;
+        if (pointsystem.totalPoints >= 100)
+        {
+            pointsystem.RemovePoints(100);
+            CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
+            CurrentPlacingTower.GetComponent<TowerLogic>().Placed = false;
+        }
     }
 }

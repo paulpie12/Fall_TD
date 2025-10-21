@@ -533,9 +533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb818512c5da4184da9e932c2dcacd8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 10
-  MaxHealth: 10
-  PointAmount: 10
+  Health: 30
+  MaxHealth: 30
+  PointAmount: 5
   healthBar: {fileID: 2311179951199151533}
 --- !u!195 &7742578877185290854
 NavMeshAgent:
@@ -547,7 +547,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class TowerLogic : MonoBehaviour
 {
-    [SerializeField] private float range = 5f;
     [SerializeField] private List<GameObject> enemiesInRange = new List<GameObject>();
+    [SerializeField] private float range = 4f;
     [SerializeField] private LayerMask detectionLayer;
     [SerializeField] private Gun gun;
     [SerializeField] private float delay = 1f;
-    [SerializeField] private int damage = 1;
+    [SerializeField] private int damage = 10;
     [SerializeField] Button button;
 
     public bool Placed = true;

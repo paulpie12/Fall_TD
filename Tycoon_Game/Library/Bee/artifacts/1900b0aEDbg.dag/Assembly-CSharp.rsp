@@ -362,6 +362,7 @@
 "Assets/Scripts/BaseLogic.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemyMovement.cs"
+"Assets/Scripts/EnemySpawner.cs"
 "Assets/Scripts/FloatingHealthBar.cs"
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/LookAtCamera.cs"
