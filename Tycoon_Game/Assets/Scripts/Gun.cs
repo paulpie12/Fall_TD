@@ -20,7 +20,7 @@ public class Gun : MonoBehaviour
 
             StartCoroutine(SpawnTrail(trail, hit));
 
-            Enemy enemy = hit.collider.gameObject.GetComponent<Enemy>();
+            EnemyLogic enemy = hit.collider.gameObject.GetComponent<EnemyLogic>();
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);

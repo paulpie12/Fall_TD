@@ -20,7 +20,7 @@ public class BaseLogic : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-           Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+           EnemyLogic enemy = collision.gameObject.GetComponent<EnemyLogic>();
             if (enemy != null) 
             {
                 enemyHealth = enemy.CurrentHealth;
