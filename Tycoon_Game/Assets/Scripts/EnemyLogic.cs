@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class EnemyLogic : MonoBehaviour
 {
-    [SerializeField] private int Health = 10;
+    [SerializeField] private float Health = 10;
     [SerializeField] private int MaxHealth = 10;
     [SerializeField] private int PointAmount = 10;
 
-    private PointSystem upgradeSystem;
+    private PointSystem PointSystem;
 
     [SerializeField] FloatingHealthBar healthBar;
 
-    public int CurrentHealth => Health;
+    public float CurrentHealth => Health;
 
     private void Awake()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
-        upgradeSystem = FindObjectOfType<PointSystem>();
+        PointSystem = FindObjectOfType<PointSystem>();
     }
 
     private void Start()
@@ -26,7 +26,7 @@ public class EnemyLogic : MonoBehaviour
         healthBar.UpdateHealthBar(Health, MaxHealth);
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         Health -= damageAmount;
         healthBar.UpdateHealthBar(Health, MaxHealth);
@@ -38,7 +38,7 @@ public class EnemyLogic : MonoBehaviour
 
     public void Die()
     {
-        upgradeSystem.AddPoints(PointAmount);
+        PointSystem.AddPoints(PointAmount);
         WaveSpawner spawner = FindObjectOfType<WaveSpawner>();
         if (spawner != null)
         {

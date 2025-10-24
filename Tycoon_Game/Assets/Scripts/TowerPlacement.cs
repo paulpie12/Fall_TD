@@ -10,6 +10,7 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private Camera Playercamera;
     [SerializeField] private TowerLogic TowerLogic;
     [SerializeField] private PointSystem pointsystem;
+    [SerializeField] private UpgradeSystem upgradeSystem;
 
     private GameObject CurrentPlacingTower;
 
@@ -56,7 +57,9 @@ public class TowerPlacement : MonoBehaviour
         {
             pointsystem.RemovePoints(100);
             CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
-            CurrentPlacingTower.GetComponent<TowerLogic>().Placed = false;
+            TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
+            logic.Placed = false;
+            logic.SetUpgradeSystem(upgradeSystem);
         }
     }
 }

@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
     [SerializeField] TrailRenderer bulletTrail;
     [SerializeField] LayerMask mask;
 
-    public void Shoot(int damage)
+    public void Shoot(float damage)
     {
         shootingParticleSystem.Play();
         Vector3 direction = transform.forward;

@@ -10,8 +10,15 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] private LayerMask detectionLayer;
     [SerializeField] private Gun gun;
     [SerializeField] private float delay = 1f;
-    [SerializeField] private int damage = 10;
-    [SerializeField] Button button;
+    [SerializeField] private float damage = 10;
+    [SerializeField] Button DamageButton;
+    [SerializeField] Button RangeButton;
+    [SerializeField] UpgradeSystem upgradeSystem;
+
+
+    public int damageLevel;
+
+
 
     public bool Placed = true;
 
@@ -19,7 +26,10 @@ public class TowerLogic : MonoBehaviour
 
     private void Awake()
     {
-        button.gameObject.SetActive(false);
+        DamageButton.gameObject.SetActive(false);
+        RangeButton.gameObject.SetActive(false);
+        DamageButton.onClick.AddListener(() => upgradeSystem.DamageUpgrade());
+        RangeButton.onClick.AddListener(() => upgradeSystem.RangeUpgrade());
     }
 
     private void Update()
@@ -38,6 +48,12 @@ public class TowerLogic : MonoBehaviour
                 shootTimer = 0f;
             }
         }
+    }
+    public void SetUpgradeSystem(UpgradeSystem system)
+    {
+        upgradeSystem = system;
+        upgradeSystem.OnDamageClick += UpgradeDamage;
+        upgradeSystem.OnRangeClick += UpgradeRange;
     }
 
     private void UpdateEnemiesInRange()
@@ -96,14 +112,25 @@ public class TowerLogic : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (button.isActiveAndEnabled && Placed == true)
+        if (DamageButton.isActiveAndEnabled && Placed == true)
         {
-            button.gameObject.SetActive(false);
+            DamageButton.gameObject.SetActive(false);
+            RangeButton.gameObject.SetActive(false);
         }
-        else if (!button.isActiveAndEnabled && Placed == true)
+        else if (!DamageButton.isActiveAndEnabled && Placed == true)
         {
-            button.gameObject.SetActive(true);
+            DamageButton.gameObject.SetActive(true);
+            RangeButton.gameObject.SetActive(true);
         }
+    }
+    private void UpgradeDamage()
+    {
+        damage += 5;
+    }
+
+    private void UpgradeRange()
+    {
+        range += 5;
     }
 
 }

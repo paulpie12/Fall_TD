@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BaseLogic : MonoBehaviour
 {
-    [SerializeField] private int Health = 10;
-    [SerializeField] private int MaxHealth = 10;
+    [SerializeField] private float Health = 10;
+    [SerializeField] private float MaxHealth = 10;
 
     [SerializeField] FloatingHealthBar healthBar;
 
-    private int enemyHealth = 0;
+    private float enemyHealth = 0;
 
     private void Start()
     {
@@ -30,7 +30,7 @@ public class BaseLogic : MonoBehaviour
         }
     }
 
-    private void TakeDamage (int damage)
+    private void TakeDamage (float damage)
     {
         Health -= damage;
         healthBar.UpdateHealthBar(Health, MaxHealth);
