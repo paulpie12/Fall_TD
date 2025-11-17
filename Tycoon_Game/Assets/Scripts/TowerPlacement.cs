@@ -62,4 +62,26 @@ public class TowerPlacement : MonoBehaviour
             logic.SetUpgradeSystem(upgradeSystem);
         }
     }
+    public void SetTower2ToPlace(GameObject tower)
+    {
+        if (pointsystem.totalPoints >= 150)
+        {
+            pointsystem.RemovePoints(150);
+            CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
+            TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
+            logic.Placed = false;
+            logic.SetUpgradeSystem(upgradeSystem);
+        }
+    }
+    public void SetTower3ToPlace(GameObject tower)
+    {
+        if (pointsystem.totalPoints >= 200)
+        {
+            pointsystem.RemovePoints(200);
+            CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
+            TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
+            logic.Placed = false;
+            logic.SetUpgradeSystem(upgradeSystem);
+        }
+    }
 }
