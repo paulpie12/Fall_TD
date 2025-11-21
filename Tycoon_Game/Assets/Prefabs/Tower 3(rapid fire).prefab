@@ -328,6 +328,7 @@ MonoBehaviour:
   DamageButton: {fileID: 4751670498428827210}
   RangeButton: {fileID: 8509354674249521419}
   upgradeSystem: {fileID: 0}
+  towertype: 1
   damageLevel: 0
   Placed: 1
 --- !u!1 &4996635668156983297

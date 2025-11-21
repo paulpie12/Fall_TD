@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class UpgradeSystem : MonoBehaviour
 {
-    public event Action OnDamageClick;
-    public event Action OnRangeClick;
-    public void DamageUpgrade()
+    public event Action<TowerLogic> OnDamageClick;
+    public event Action<TowerLogic> OnRangeClick;
+    public void DamageUpgrade(TowerLogic tower)
     {
-        OnDamageClick.Invoke();
+        OnDamageClick?.Invoke(tower);
     }
 
-    public void RangeUpgrade()
+    public void RangeUpgrade(TowerLogic tower)
     {
-        OnRangeClick.Invoke();
+        OnRangeClick?.Invoke(tower);
     }
 }

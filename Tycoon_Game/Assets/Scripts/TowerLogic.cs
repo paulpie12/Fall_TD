@@ -2,7 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+public enum TowerType
+{
+    Sniper,
+    Rapid,
+    Basic
+}
 public class TowerLogic : MonoBehaviour
 {
     [SerializeField] private List<GameObject> enemiesInRange = new List<GameObject>();
@@ -14,23 +19,52 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] Button DamageButton;
     [SerializeField] Button RangeButton;
     [SerializeField] UpgradeSystem upgradeSystem;
-
+    [SerializeField] TowerType towertype;
 
 
     public int damageLevel;
-
-
-
     public bool Placed = true;
 
+
+
     private float shootTimer = 0f;
+    private int rangeLevel = 0;
+    private int damagelevel = 0;
+    private PointSystem pointsystem;
+    private int damageUpgradeCost = 0;
+    private int rangeUpgradeCost = 0;
+
 
     private void Awake()
     {
         DamageButton.gameObject.SetActive(false);
         RangeButton.gameObject.SetActive(false);
-        DamageButton.onClick.AddListener(() => upgradeSystem.DamageUpgrade());
-        RangeButton.onClick.AddListener(() => upgradeSystem.RangeUpgrade());
+        DamageButton.onClick.AddListener(() => upgradeSystem.DamageUpgrade(this));
+        RangeButton.onClick.AddListener(() => upgradeSystem.RangeUpgrade(this));
+    }
+    private void Start()
+    {
+        pointsystem = PointSystem.instance;
+        //starting upgrade cost (change)
+        if( towertype == TowerType.Basic)
+        {
+            damageUpgradeCost = 20;
+            rangeUpgradeCost = 20;
+        }
+        else if(  towertype == TowerType.Sniper)
+        {
+            damageUpgradeCost = 20;
+            rangeUpgradeCost = 20;
+        }
+        else if (towertype == TowerType.Rapid)
+        {
+            damageUpgradeCost = 20;
+            rangeUpgradeCost = 20;
+        }
+        else
+        {
+            Debug.Log("Error setting starting upgrade cost");
+        }
     }
 
     private void Update()
@@ -53,8 +87,16 @@ public class TowerLogic : MonoBehaviour
     public void SetUpgradeSystem(UpgradeSystem system)
     {
         upgradeSystem = system;
-        upgradeSystem.OnDamageClick += UpgradeDamage;
-        upgradeSystem.OnRangeClick += UpgradeRange;
+        // Only upgrade THIS tower
+        upgradeSystem.OnDamageClick += (tower) =>
+        {
+            if (tower == this) UpgradeDamage();
+        };
+
+        upgradeSystem.OnRangeClick += (tower) =>
+        {
+            if (tower == this) UpgradeRange();
+        };
     }
 
     private void UpdateEnemiesInRange()
@@ -126,12 +168,61 @@ public class TowerLogic : MonoBehaviour
     }
     private void UpgradeDamage()
     {
-        damage += 5;
+        if (towertype == TowerType.Sniper && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
+        {
+            damage += 5;
+            damagelevel += 1;
+            pointsystem.RemovePoints(damageUpgradeCost);
+            damageUpgradeCost += 20;
+        }
+        else if (towertype == TowerType.Basic && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
+        {
+            damage += 5;
+            damagelevel += 1;
+            pointsystem.RemovePoints(damageUpgradeCost);
+            damageUpgradeCost += 20;
+        }
+        else if (towertype == TowerType.Rapid && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
+        {
+            damage += 5;
+            damagelevel += 1;
+            pointsystem.RemovePoints(damageUpgradeCost);
+            damageUpgradeCost += 20;
+        }
+        else
+        {
+            Debug.Log("error Upgrading damage");
+        }
+
     }
 
     private void UpgradeRange()
     {
-        range += 5;
+        if (towertype == TowerType.Sniper && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
+        {
+            range += 5;
+            rangeLevel += 1;
+            pointsystem.RemovePoints(rangeUpgradeCost);
+            rangeUpgradeCost += 20;
+        }
+        else if (towertype == TowerType.Basic && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
+        {
+            range += 5;
+            rangeLevel += 1;
+            pointsystem.RemovePoints(rangeUpgradeCost);
+            rangeUpgradeCost += 20;
+        }
+        else if (towertype == TowerType.Rapid && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
+        {
+            range += 5;
+            rangeLevel += 1;
+            pointsystem.RemovePoints(rangeUpgradeCost);
+            rangeUpgradeCost += 20;
+        }
+        else
+        {
+            Debug.Log("error Upgrading range");
+        }
     }
 
 }
