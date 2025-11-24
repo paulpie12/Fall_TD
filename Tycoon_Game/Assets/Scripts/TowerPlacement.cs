@@ -53,6 +53,7 @@ public class TowerPlacement : MonoBehaviour
 
     public void SetTower1ToPlace(GameObject tower)
     {
+        //basic
         if (pointsystem.totalPoints >= 100)
         {
             pointsystem.RemovePoints(100);
@@ -64,6 +65,7 @@ public class TowerPlacement : MonoBehaviour
     }
     public void SetTower2ToPlace(GameObject tower)
     {
+        //sniper
         if (pointsystem.totalPoints >= 150)
         {
             pointsystem.RemovePoints(150);
@@ -75,6 +77,7 @@ public class TowerPlacement : MonoBehaviour
     }
     public void SetTower3ToPlace(GameObject tower)
     {
+        //rapid
         if (pointsystem.totalPoints >= 200)
         {
             pointsystem.RemovePoints(200);

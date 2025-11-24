@@ -366,6 +366,7 @@
 "Assets/Scripts/Gun.cs"
 "Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/PointSystem.cs"
+"Assets/Scripts/RangeCircles.cs"
 "Assets/Scripts/TowerLogic.cs"
 "Assets/Scripts/TowerPlacement.cs"
 "Assets/Scripts/Unused/CameraControl.cs"

@@ -21,11 +21,8 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] UpgradeSystem upgradeSystem;
     [SerializeField] TowerType towertype;
 
-
     public int damageLevel;
     public bool Placed = true;
-
-
 
     private float shootTimer = 0f;
     private int rangeLevel = 0;
@@ -35,6 +32,8 @@ public class TowerLogic : MonoBehaviour
     private int rangeUpgradeCost = 0;
 
 
+    private RangeCircle rangeCircle;
+
     private void Awake()
     {
         DamageButton.gameObject.SetActive(false);
@@ -42,16 +41,23 @@ public class TowerLogic : MonoBehaviour
         DamageButton.onClick.AddListener(() => upgradeSystem.DamageUpgrade(this));
         RangeButton.onClick.AddListener(() => upgradeSystem.RangeUpgrade(this));
     }
+
     private void Start()
     {
+
+        rangeCircle = GetComponent<RangeCircle>();
+        if (rangeCircle != null)
+            rangeCircle.UpdateRadius(range);
+
         pointsystem = PointSystem.instance;
+
         //starting upgrade cost (change)
-        if( towertype == TowerType.Basic)
+        if (towertype == TowerType.Basic)
         {
             damageUpgradeCost = 20;
             rangeUpgradeCost = 20;
         }
-        else if(  towertype == TowerType.Sniper)
+        else if (towertype == TowerType.Sniper)
         {
             damageUpgradeCost = 20;
             rangeUpgradeCost = 20;
@@ -71,7 +77,7 @@ public class TowerLogic : MonoBehaviour
     {
         UpdateEnemiesInRange();
 
-        if(enemiesInRange.Count > 0)
+        if (enemiesInRange.Count > 0)
         {
             this.transform.LookAt(enemiesInRange[0].transform);
 
@@ -84,10 +90,11 @@ public class TowerLogic : MonoBehaviour
             }
         }
     }
+
     public void SetUpgradeSystem(UpgradeSystem system)
     {
         upgradeSystem = system;
-        // Only upgrade THIS tower
+
         upgradeSystem.OnDamageClick += (tower) =>
         {
             if (tower == this) UpgradeDamage();
@@ -103,10 +110,8 @@ public class TowerLogic : MonoBehaviour
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, range, detectionLayer);
 
-        // Create a temporary list to store current enemies in range
         List<GameObject> currentEnemies = new List<GameObject>();
 
-        // Loop through all colliders and add valid enemies
         foreach (Collider hit in hits)
         {
             GameObject enemy = hit.gameObject;
@@ -114,7 +119,6 @@ public class TowerLogic : MonoBehaviour
             if (!currentEnemies.Contains(enemy))
                 currentEnemies.Add(enemy);
 
-            // If the enemy is new, add it to the main list
             if (!enemiesInRange.Contains(enemy))
             {
                 enemiesInRange.Add(enemy);
@@ -122,7 +126,6 @@ public class TowerLogic : MonoBehaviour
             }
         }
 
-        // Remove enemies that are no longer in range
         for (int i = enemiesInRange.Count - 1; i >= 0; i--)
         {
             if (enemiesInRange[i] == null)
@@ -135,9 +138,9 @@ public class TowerLogic : MonoBehaviour
                 Debug.Log("Enemy left range: " + enemiesInRange[i].name);
                 RemoveEnemy(enemiesInRange[i]);
             }
-
         }
     }
+
     public void RemoveEnemy(GameObject enemy)
     {
         enemiesInRange.Remove(enemy);
@@ -145,27 +148,35 @@ public class TowerLogic : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        // Yellow sphere for detection range
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, range);
 
-        // Red line showing forward direction
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + transform.forward * 5);
     }
+
     private void OnMouseDown()
     {
-        if (DamageButton.isActiveAndEnabled && Placed == true)
+        if (rangeCircle != null)
+        {
+            // Toggle: if currently hidden, show it; if shown, hide it
+            bool currentlyEnabled = rangeCircle.GetComponent<LineRenderer>().enabled;
+            rangeCircle.ShowCircle(!currentlyEnabled);
+        }
+
+        // Toggle upgrade buttons as before
+        if (DamageButton.isActiveAndEnabled && Placed)
         {
             DamageButton.gameObject.SetActive(false);
             RangeButton.gameObject.SetActive(false);
         }
-        else if (!DamageButton.isActiveAndEnabled && Placed == true)
+        else if (!DamageButton.isActiveAndEnabled && Placed)
         {
             DamageButton.gameObject.SetActive(true);
             RangeButton.gameObject.SetActive(true);
         }
     }
+
     private void UpgradeDamage()
     {
         if (towertype == TowerType.Sniper && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
@@ -193,7 +204,6 @@ public class TowerLogic : MonoBehaviour
         {
             Debug.Log("error Upgrading damage");
         }
-
     }
 
     private void UpgradeRange()
@@ -223,6 +233,10 @@ public class TowerLogic : MonoBehaviour
         {
             Debug.Log("error Upgrading range");
         }
+
+
+        if (rangeCircle != null)
+            rangeCircle.UpdateRadius(range);
     }
 
 }
