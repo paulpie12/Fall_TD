@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BaseLogic : MonoBehaviour
@@ -8,11 +9,17 @@ public class BaseLogic : MonoBehaviour
     [SerializeField] private float MaxHealth = 10;
 
     [SerializeField] FloatingHealthBar healthBar;
+    [SerializeField] GameObject UI;
+    [SerializeField] GameObject GameOverCanvas;
+
+    [SerializeField] private TextMeshProUGUI ScoreText;
+    [SerializeField] PointSystem PointSystem;
 
     private float enemyHealth = 0;
 
     private void Start()
     {
+        GameOverCanvas.SetActive(false);
         healthBar.UpdateHealthBar(Health, MaxHealth);
     }
 
@@ -34,9 +41,13 @@ public class BaseLogic : MonoBehaviour
     {
         Health -= damage;
         healthBar.UpdateHealthBar(Health, MaxHealth);
-        if(Health >= 0)
+        if(Health <= 0)
         {
-            //create logic for game lose
+            UI.SetActive(false);
+            GameOverCanvas.SetActive(true);
+            Time.timeScale = 0f;
+            ScoreText.text = "Score: " + PointSystem.score;
+
         }
 
     }

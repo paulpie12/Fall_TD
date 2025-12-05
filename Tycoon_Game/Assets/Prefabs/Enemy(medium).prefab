@@ -457,7 +457,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7d0d4b4ac907bdc4a95b52f80b083f8c, type: 2}
+  - {fileID: 2100000, guid: 7758f6ccf13d71d4ab194a2f16e89b21, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 120
   MaxHealth: 120
-  PointAmount: 8
+  PointAmount: 30
   healthBar: {fileID: 2311179951199151533}
 --- !u!195 &7742578877185290854
 NavMeshAgent:

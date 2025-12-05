@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public enum TowerType
 {
@@ -8,6 +9,7 @@ public enum TowerType
     Rapid,
     Basic
 }
+
 public class TowerLogic : MonoBehaviour
 {
     [SerializeField] private List<GameObject> enemiesInRange = new List<GameObject>();
@@ -16,10 +18,15 @@ public class TowerLogic : MonoBehaviour
     [SerializeField] private Gun gun;
     [SerializeField] private float delay = 1f;
     [SerializeField] private float damage = 10;
-    [SerializeField] Button DamageButton;
-    [SerializeField] Button RangeButton;
-    [SerializeField] UpgradeSystem upgradeSystem;
-    [SerializeField] TowerType towertype;
+    [SerializeField] private Button DamageButton;
+    [SerializeField] private Button RangeButton;
+
+    [Header("Text for Buttons")]
+    [SerializeField] private Text damageButtonText;
+    [SerializeField] private Text rangeButtonText;
+
+    [SerializeField] private UpgradeSystem upgradeSystem;
+    [SerializeField] private TowerType towertype;
 
     public int damageLevel;
     public bool Placed = true;
@@ -31,41 +38,40 @@ public class TowerLogic : MonoBehaviour
     private int damageUpgradeCost = 0;
     private int rangeUpgradeCost = 0;
 
-
     private RangeCircle rangeCircle;
 
     private void Awake()
     {
         DamageButton.gameObject.SetActive(false);
         RangeButton.gameObject.SetActive(false);
+
         DamageButton.onClick.AddListener(() => upgradeSystem.DamageUpgrade(this));
         RangeButton.onClick.AddListener(() => upgradeSystem.RangeUpgrade(this));
     }
 
     private void Start()
     {
-
         rangeCircle = GetComponent<RangeCircle>();
         if (rangeCircle != null)
             rangeCircle.UpdateRadius(range);
 
         pointsystem = PointSystem.instance;
 
-        //starting upgrade cost (change)
+        // Starting upgrade cost
         if (towertype == TowerType.Basic)
         {
-            damageUpgradeCost = 20;
-            rangeUpgradeCost = 20;
+            damageUpgradeCost = 60;
+            rangeUpgradeCost = 60;
         }
         else if (towertype == TowerType.Sniper)
         {
-            damageUpgradeCost = 20;
-            rangeUpgradeCost = 20;
+            damageUpgradeCost = 90;
+            rangeUpgradeCost = 90;
         }
         else if (towertype == TowerType.Rapid)
         {
-            damageUpgradeCost = 20;
-            rangeUpgradeCost = 20;
+            damageUpgradeCost = 120;
+            rangeUpgradeCost = 120;
         }
         else
         {
@@ -83,7 +89,7 @@ public class TowerLogic : MonoBehaviour
 
             shootTimer += Time.deltaTime;
 
-            if (shootTimer >= delay && Placed == true)
+            if (shootTimer >= delay && Placed)
             {
                 gun.Shoot(damage);
                 shootTimer = 0f;
@@ -159,22 +165,27 @@ public class TowerLogic : MonoBehaviour
     {
         if (rangeCircle != null)
         {
-            // Toggle: if currently hidden, show it; if shown, hide it
             bool currentlyEnabled = rangeCircle.GetComponent<LineRenderer>().enabled;
             rangeCircle.ShowCircle(!currentlyEnabled);
         }
 
-        // Toggle upgrade buttons as before
-        if (DamageButton.isActiveAndEnabled && Placed)
+        if (Placed)
         {
-            DamageButton.gameObject.SetActive(false);
-            RangeButton.gameObject.SetActive(false);
+            bool showButtons = !DamageButton.gameObject.activeSelf;
+
+            DamageButton.gameObject.SetActive(showButtons);
+            RangeButton.gameObject.SetActive(showButtons);
+
+            if (showButtons)
+                UpdateButtonText();
         }
-        else if (!DamageButton.isActiveAndEnabled && Placed)
-        {
-            DamageButton.gameObject.SetActive(true);
-            RangeButton.gameObject.SetActive(true);
-        }
+    }
+
+ 
+    private void UpdateButtonText()
+    {
+        damageButtonText.text = $"Damage + (Cost: {damageUpgradeCost})";
+        rangeButtonText.text = $"Range + (Cost: {rangeUpgradeCost})";
     }
 
     private void UpgradeDamage()
@@ -184,26 +195,28 @@ public class TowerLogic : MonoBehaviour
             damage += 5;
             damagelevel += 1;
             pointsystem.RemovePoints(damageUpgradeCost);
-            damageUpgradeCost += 20;
+            damageUpgradeCost += 25;
         }
         else if (towertype == TowerType.Basic && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
         {
             damage += 5;
             damagelevel += 1;
             pointsystem.RemovePoints(damageUpgradeCost);
-            damageUpgradeCost += 20;
+            damageUpgradeCost += 15;
         }
         else if (towertype == TowerType.Rapid && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
         {
             damage += 5;
             damagelevel += 1;
             pointsystem.RemovePoints(damageUpgradeCost);
-            damageUpgradeCost += 20;
+            damageUpgradeCost += 30;
         }
         else
         {
-            Debug.Log("error Upgrading damage");
+            Debug.Log("Error upgrading damage");
         }
+
+        UpdateButtonText();
     }
 
     private void UpgradeRange()
@@ -213,30 +226,30 @@ public class TowerLogic : MonoBehaviour
             range += 5;
             rangeLevel += 1;
             pointsystem.RemovePoints(rangeUpgradeCost);
-            rangeUpgradeCost += 20;
+            rangeUpgradeCost += 25;
         }
         else if (towertype == TowerType.Basic && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
         {
             range += 5;
             rangeLevel += 1;
             pointsystem.RemovePoints(rangeUpgradeCost);
-            rangeUpgradeCost += 20;
+            rangeUpgradeCost += 15;
         }
         else if (towertype == TowerType.Rapid && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
         {
             range += 5;
             rangeLevel += 1;
             pointsystem.RemovePoints(rangeUpgradeCost);
-            rangeUpgradeCost += 20;
+            rangeUpgradeCost += 30;
         }
         else
         {
-            Debug.Log("error Upgrading range");
+            Debug.Log("Error upgrading range");
         }
-
 
         if (rangeCircle != null)
             rangeCircle.UpdateRadius(range);
-    }
 
+        UpdateButtonText();
+    }
 }

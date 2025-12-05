@@ -9,6 +9,7 @@ public class PointSystem : MonoBehaviour
     public static PointSystem instance {  get; private set; }
     public int totalPoints { get; private set; }
     [SerializeField] private Text points;
+    public int score {  get; private set; }
 
     private void Awake()
     {
@@ -16,13 +17,15 @@ public class PointSystem : MonoBehaviour
     }
     private void Start()
     {
-        totalPoints = 2500;
+        totalPoints = 300;
         points.text = "Points:" + totalPoints;
+        score = 0;
     }
     public void AddPoints(int points)
     {
         totalPoints += points;
         UpdateTotal();
+        score += points;
     }
 
     public void RemovePoints(int points)

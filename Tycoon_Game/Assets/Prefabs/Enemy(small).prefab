@@ -535,7 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 50
   MaxHealth: 50
-  PointAmount: 5
+  PointAmount: 15
   healthBar: {fileID: 2311179951199151533}
 --- !u!195 &7742578877185290854
 NavMeshAgent:

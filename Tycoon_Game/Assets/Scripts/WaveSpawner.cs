@@ -24,6 +24,7 @@ public class WaveSpawner: MonoBehaviour
 
     void Start()
     {
+        spawnTimer = 5;
         GenerateWave();
     }
 
@@ -74,7 +75,7 @@ public class WaveSpawner: MonoBehaviour
 
     public void GenerateWave()
     {
-        waveValue = currWave * 10;
+        waveValue = Mathf.RoundToInt(currWave * 10 + Mathf.Pow(currWave, 1.5f) * 3);
         GenerateEnemies();
 
         spawnInterval = waveDuration / enemiesToSpawn.Count; 
@@ -85,6 +86,7 @@ public class WaveSpawner: MonoBehaviour
     {
         List<GameObject> generatedEnemies = new List<GameObject>();
         while (waveValue > 0 || generatedEnemies.Count < 50)
+
         {
             int randEnemyId = Random.Range(0, enemies.Count);
             int randEnemyCost = enemies[randEnemyId].cost;
@@ -94,7 +96,7 @@ public class WaveSpawner: MonoBehaviour
                 generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
                 waveValue -= randEnemyCost;
             }
-            else if (waveValue <= 0)
+            else
             {
                 break;
             }
