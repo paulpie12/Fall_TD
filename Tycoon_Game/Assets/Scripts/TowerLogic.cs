@@ -192,7 +192,7 @@ public class TowerLogic : MonoBehaviour
     {
         if (towertype == TowerType.Sniper && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
         {
-            damage += 5;
+            damage += 10;
             damagelevel += 1;
             pointsystem.RemovePoints(damageUpgradeCost);
             damageUpgradeCost += 25;
@@ -206,7 +206,7 @@ public class TowerLogic : MonoBehaviour
         }
         else if (towertype == TowerType.Rapid && damagelevel != 3 && pointsystem.totalPoints >= damageUpgradeCost)
         {
-            damage += 5;
+            damage += 2;
             damagelevel += 1;
             pointsystem.RemovePoints(damageUpgradeCost);
             damageUpgradeCost += 30;
@@ -230,14 +230,14 @@ public class TowerLogic : MonoBehaviour
         }
         else if (towertype == TowerType.Basic && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
         {
-            range += 5;
+            range += 1;
             rangeLevel += 1;
             pointsystem.RemovePoints(rangeUpgradeCost);
             rangeUpgradeCost += 15;
         }
         else if (towertype == TowerType.Rapid && rangeLevel != 3 && pointsystem.totalPoints >= rangeUpgradeCost)
         {
-            range += 5;
+            range += 1;
             rangeLevel += 1;
             pointsystem.RemovePoints(rangeUpgradeCost);
             rangeUpgradeCost += 30;
