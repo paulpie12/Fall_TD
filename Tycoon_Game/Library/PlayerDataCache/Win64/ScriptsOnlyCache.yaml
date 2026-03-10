@@ -50,7 +50,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
   serializedClasses:
     Assembly-CSharp:
-    - Enemy
+    - WaveSpawner/Enemy
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -1129,7 +1129,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: a5b4d41aeca7cac3416418aced6c436f
+      Hash: 229bca18171cf9efd717daa17714cc67
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: TowerPlacement
@@ -1635,4 +1635,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Towerdefence.unity
-  playerPath: D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game.exe
+  playerPath: D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game.exe

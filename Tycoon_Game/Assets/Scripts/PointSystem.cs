@@ -15,6 +15,14 @@ public class PointSystem : MonoBehaviour
     {
         instance = this;
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            totalPoints += 100;
+            UpdateTotal();
+        }
+    }
     private void Start()
     {
         totalPoints = 300;

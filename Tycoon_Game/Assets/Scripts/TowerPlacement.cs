@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TowerPlacement : MonoBehaviour
 {
@@ -13,6 +15,12 @@ public class TowerPlacement : MonoBehaviour
     [SerializeField] private UpgradeSystem upgradeSystem;
 
     private GameObject CurrentPlacingTower;
+    [SerializeField] private TextMeshProUGUI basicCountText;
+    private int basicCount = 0;
+    [SerializeField] private TextMeshProUGUI sniperCountText;
+    private int sniperCount = 0;
+    [SerializeField] private TextMeshProUGUI rapidCountText;
+    private int rapidCount = 0;
 
     void Update()
     {
@@ -54,37 +62,43 @@ public class TowerPlacement : MonoBehaviour
     public void SetTower1ToPlace(GameObject tower)
     {
         //basic
-        if (pointsystem.totalPoints >= 100)
+        if (pointsystem.totalPoints >= 100 && basicCount < 5 )
         {
             pointsystem.RemovePoints(100);
             CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
             TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
             logic.Placed = false;
             logic.SetUpgradeSystem(upgradeSystem);
+            basicCount++;
+            basicCountText.text = basicCount + "/5";
         }
     }
     public void SetTower2ToPlace(GameObject tower)
     {
         //sniper
-        if (pointsystem.totalPoints >= 150)
+        if (pointsystem.totalPoints >= 150 && sniperCount < 5)
         {
             pointsystem.RemovePoints(150);
             CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
             TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
             logic.Placed = false;
             logic.SetUpgradeSystem(upgradeSystem);
+            sniperCount++;
+            sniperCountText.text = sniperCount + "/5";
         }
     }
     public void SetTower3ToPlace(GameObject tower)
     {
         //rapid
-        if (pointsystem.totalPoints >= 200)
+        if (pointsystem.totalPoints >= 200 && rapidCount < 5)
         {
             pointsystem.RemovePoints(200);
             CurrentPlacingTower = Instantiate(tower, Vector3.zero, Quaternion.identity);
             TowerLogic logic = CurrentPlacingTower.GetComponent<TowerLogic>();
             logic.Placed = false;
             logic.SetUpgradeSystem(upgradeSystem);
+            rapidCount++;
+            rapidCountText.text = rapidCount + "/5";
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaveSpawner: MonoBehaviour
+public class WaveSpawner : MonoBehaviour
 {
     public List<Enemy> enemies = new List<Enemy>();
     public int currWave;
@@ -57,7 +57,7 @@ public class WaveSpawner: MonoBehaviour
             }
             else
             {
-                waveTimer = 0; 
+                waveTimer = 0;
             }
         }
         else
@@ -78,19 +78,20 @@ public class WaveSpawner: MonoBehaviour
         waveValue = Mathf.RoundToInt(currWave * 10 + Mathf.Pow(currWave, 1.5f) * 3);
         GenerateEnemies();
 
-        spawnInterval = waveDuration / enemiesToSpawn.Count; 
-        waveTimer = waveDuration; 
+        spawnInterval = waveDuration / enemiesToSpawn.Count;
+        waveTimer = waveDuration;
     }
 
     public void GenerateEnemies()
     {
         List<GameObject> generatedEnemies = new List<GameObject>();
-        while (waveValue > 0 || generatedEnemies.Count < 50)
 
+        while (waveValue > 0 && generatedEnemies.Count < 50)
         {
             int randEnemyId = Random.Range(0, enemies.Count);
             int randEnemyCost = enemies[randEnemyId].cost;
 
+            // If this enemy fits in the budget → add it
             if (waveValue - randEnemyCost >= 0)
             {
                 generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
@@ -98,17 +99,35 @@ public class WaveSpawner: MonoBehaviour
             }
             else
             {
-                break;
+                // Check ONE enemy is still affordable
+                bool somethingAffordable = false;
+
+                foreach (Enemy e in enemies)
+                {
+                    if (waveValue >= e.cost)
+                    {
+                        somethingAffordable = true;
+                        break;
+                    }
+                }
+
+                // If nothing affordable → stop the loop safely
+                if (!somethingAffordable)
+                    break;
+
+                // Otherwise: continue the loop and try another random enemy
             }
         }
+
         enemiesToSpawn.Clear();
         enemiesToSpawn = generatedEnemies;
     }
-}
 
-[System.Serializable]
-public class Enemy
-{
-    public GameObject enemyPrefab;
-    public int cost;
+
+    [System.Serializable]
+    public class Enemy
+    {
+        public GameObject enemyPrefab;
+        public int cost;
+    }
 }

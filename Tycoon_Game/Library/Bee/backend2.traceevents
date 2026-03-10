@@ -1,266 +1,256 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1764973141481626, "dur":299, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141481958, "dur":15450, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141497483, "dur":830, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498467, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498556, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level0" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498652, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level1" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498786, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498877, "dur":93, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":0, "ts":1764973141499012, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":0, "ts":1764973141499177, "dur":90, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/boot.config" }}
-,{ "pid":12345, "tid":0, "ts":1764973141499405, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":0, "ts":1764973141499560, "dur":81, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1764973141499976, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1764973141500360, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1764973141500487, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1764973141500945, "dur":79, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1764973141498340, "dur":6814, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141505155, "dur":328754, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141833910, "dur":252, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141834337, "dur":8617, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1764973141498675, "dur":6483, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1764973141505160, "dur":2338, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1764973141514740, "dur":72776, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":1, "ts":1764973141587520, "dur":160, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141587687, "dur":153, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":1, "ts":1764973141587841, "dur":184, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":1, "ts":1764973141588205, "dur":259, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141588465, "dur":204, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141588671, "dur":564, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141589236, "dur":338, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141589575, "dur":421, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141589998, "dur":1189, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141591222, "dur":181, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player344f0e7d-inputdata.json" }}
-,{ "pid":12345, "tid":1, "ts":1764973141587519, "dur":3942, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141591918, "dur":112510, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141705265, "dur":1508, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141705265, "dur":1509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141706789, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1764973141708059, "dur":42643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141750735, "dur":33115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141783884, "dur":44191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1764973141828099, "dur":5824, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1764973141498703, "dur":6459, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1764973141505163, "dur":204, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1764973141505367, "dur":2142, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1764973141509244, "dur":3104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1764973141512791, "dur":31698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1764973141571633, "dur":17614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141589262, "dur":449, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141589262, "dur":450, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141589729, "dur":33202, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141622954, "dur":62547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141685531, "dur":23532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141709088, "dur":42536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141751659, "dur":72928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1764973141827288, "dur":106, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1764973141824634, "dur":2804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1764973141827508, "dur":3415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":2, "ts":1764973141830940, "dur":2979, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1764973141498728, "dur":6438, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1764973141505168, "dur":212, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1764973141505380, "dur":2138, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1764973141507529, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1764973141507520, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1764973141515215, "dur":56680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1764973141571965, "dur":17445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141589424, "dur":154, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141589423, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141589594, "dur":33149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141622798, "dur":52288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141675113, "dur":33217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141708367, "dur":42425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141750824, "dur":33278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1764973141784148, "dur":49726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141498748, "dur":6422, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1764973141505172, "dur":195, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1764973141505367, "dur":2155, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1764973141507522, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1764973141513079, "dur":1287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1764973141514406, "dur":58062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game.exe" }}
-,{ "pid":12345, "tid":4, "ts":1764973141572509, "dur":17125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141589645, "dur":1105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141589644, "dur":1107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141590792, "dur":71580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141662420, "dur":25983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141688437, "dur":25334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141713800, "dur":40761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141754588, "dur":72134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1764973141826767, "dur":3522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/resources.assets" }}
-,{ "pid":12345, "tid":4, "ts":1764973141830311, "dur":3609, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1764973141498768, "dur":6406, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1764973141505176, "dur":234, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1764973141505411, "dur":2095, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1764973141509371, "dur":3139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1764973141512864, "dur":22837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141571293, "dur":17394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141588726, "dur":33453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141622217, "dur":52352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141674605, "dur":15817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141690452, "dur":59595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141750093, "dur":32984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141783102, "dur":45142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1764973141828269, "dur":5656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1764973141498790, "dur":6387, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1764973141505178, "dur":240, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1764973141505419, "dur":2093, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1764973141510645, "dur":1784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":6, "ts":1764973141512841, "dur":31751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1764973141571379, "dur":17489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141588905, "dur":33293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141622229, "dur":52376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141674669, "dur":15858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141690559, "dur":59526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141750109, "dur":32984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141783118, "dur":45486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1764973141828623, "dur":5295, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141498816, "dur":6365, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141505183, "dur":213, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141505396, "dur":2115, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141510924, "dur":1451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":7, "ts":1764973141512798, "dur":58513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1764973141571376, "dur":17180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141588596, "dur":32706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141621339, "dur":41466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141662841, "dur":26086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141688991, "dur":26636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141715662, "dur":63430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141827203, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141779118, "dur":48143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1764973141827290, "dur":116, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1764973141827408, "dur":4444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1764973141831865, "dur":2048, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1764973141498840, "dur":6345, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1764973141505187, "dur":211, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1764973141505398, "dur":2115, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1764973141507535, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
-,{ "pid":12345, "tid":8, "ts":1764973141507515, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1764973141515690, "dur":56606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1764973141572328, "dur":17368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141589712, "dur":268, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141589711, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141589999, "dur":33122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141623147, "dur":62415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141685586, "dur":23783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141709392, "dur":42693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141752109, "dur":72998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1764973141825144, "dur":5119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":8, "ts":1764973141830297, "dur":3610, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1764973141498862, "dur":6327, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1764973141505191, "dur":141, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1764973141505332, "dur":2175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1764973141512104, "dur":2286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1764973141544546, "dur":28145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":9, "ts":1764973141572712, "dur":17503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141590247, "dur":33803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141624084, "dur":61387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141685506, "dur":23752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141709283, "dur":42498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141751809, "dur":72792, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1764973141824639, "dur":2571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":9, "ts":1764973141827233, "dur":133, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1764973141827369, "dur":3178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level0" }}
-,{ "pid":12345, "tid":9, "ts":1764973141830573, "dur":3342, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1764973141498883, "dur":6311, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1764973141505194, "dur":2322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1764973141510111, "dur":2366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":10, "ts":1764973141513124, "dur":21993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":10, "ts":1764973141571287, "dur":17464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141588776, "dur":32814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141621615, "dur":41299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141662943, "dur":26138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141689115, "dur":26186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141715331, "dur":54514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141769894, "dur":57115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1764973141830347, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1764973141827043, "dur":3373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level1" }}
-,{ "pid":12345, "tid":10, "ts":1764973141830450, "dur":3464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1764973141498907, "dur":6291, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1764973141505199, "dur":2306, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1764973141509033, "dur":3293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":11, "ts":1764973141512729, "dur":31574, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":11, "ts":1764973141571564, "dur":17626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141589209, "dur":227, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141589208, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141589483, "dur":33198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141622709, "dur":62279, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141685030, "dur":23327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141708390, "dur":42510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141750935, "dur":33322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1764973141784279, "dur":40448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/sharedassets1.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1764973141827216, "dur":69, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1764973141824760, "dur":2536, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":11, "ts":1764973141827325, "dur":104, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1764973141827433, "dur":3464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":11, "ts":1764973141830910, "dur":3011, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1764973141498927, "dur":6277, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1764973141505204, "dur":2300, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1764973141507514, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
-,{ "pid":12345, "tid":12, "ts":1764973141507506, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":12, "ts":1764973141513732, "dur":30834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":12, "ts":1764973141571372, "dur":17466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141588868, "dur":32830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141621745, "dur":52631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141674407, "dur":15940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141690382, "dur":59428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141749841, "dur":32995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141782863, "dur":45031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1764973141827912, "dur":5998, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1764973141498946, "dur":6263, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1764973141505209, "dur":2310, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1764973141511469, "dur":1405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":13, "ts":1764973141512921, "dur":24438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141571368, "dur":17750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141589155, "dur":33285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141622475, "dur":52577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141675089, "dur":15662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141690805, "dur":59850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141750713, "dur":33372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141784112, "dur":44125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1764973141828256, "dur":5656, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1764973141498967, "dur":6246, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1764973141505214, "dur":2289, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1764973141507529, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":14, "ts":1764973141507507, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":14, "ts":1764973141514183, "dur":57888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":14, "ts":1764973141572104, "dur":17841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141589968, "dur":33048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141623044, "dur":61965, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141685047, "dur":23626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141708746, "dur":42427, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141751203, "dur":33070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":14, "ts":1764973141784296, "dur":40502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":14, "ts":1764973141824846, "dur":2082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":14, "ts":1764973141826967, "dur":3419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level1.resS" }}
-,{ "pid":12345, "tid":14, "ts":1764973141830407, "dur":3523, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1764973141498986, "dur":6232, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1764973141505218, "dur":2284, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1764973141543941, "dur":28530, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/app.info" }}
-,{ "pid":12345, "tid":15, "ts":1764973141572488, "dur":17404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141589907, "dur":479, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141589906, "dur":481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141590407, "dur":33501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141623934, "dur":61220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141685197, "dur":23814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141709034, "dur":42057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141751118, "dur":72194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1764973141823353, "dur":3833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":15, "ts":1764973141827218, "dur":136, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1764973141827357, "dur":3331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/level0.resS" }}
-,{ "pid":12345, "tid":15, "ts":1764973141830698, "dur":3232, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1764973141499043, "dur":6179, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1764973141505222, "dur":2288, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1764973141507533, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
-,{ "pid":12345, "tid":16, "ts":1764973141507511, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":16, "ts":1764973141516162, "dur":55145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":16, "ts":1764973141571386, "dur":17756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141589197, "dur":33317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141622556, "dur":52470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141675052, "dur":15815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141690894, "dur":59872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141750797, "dur":33291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141784129, "dur":44519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.4/Tycoon_Game_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1764973141828664, "dur":5247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1764973141848560, "dur":8007, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1765228136202316, "dur":300, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228136202654, "dur":33436, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228136236095, "dur":52, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228136236169, "dur":724, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228136236925, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":0, "ts":1765228136236981, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":0, "ts":1765228136237130, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/level0" }}
+,{ "pid":12345, "tid":0, "ts":1765228136237357, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1765228136237536, "dur":83, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":0, "ts":1765228136238479, "dur":88, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1765228136238655, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1765228136239622, "dur":82, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1765228136240068, "dur":93, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1765228136236920, "dur":6763, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228136243684, "dur":1784228, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228138027913, "dur":401, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228138028507, "dur":6377, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1765228136237723, "dur":6012, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1765228136243737, "dur":226, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1765228136243964, "dur":2105, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1765228136251132, "dur":247388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1765228136498550, "dur":159543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136658128, "dur":93708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136751859, "dur":95751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136847643, "dur":74441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136922122, "dur":39475, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136961626, "dur":19055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1765228136980710, "dur":118198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1765228137098929, "dur":619005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/level0.resS" }}
+,{ "pid":12345, "tid":1, "ts":1765228137717945, "dur":310012, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1765228136237591, "dur":6108, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1765228136243700, "dur":283, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1765228136243983, "dur":2083, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1765228136251716, "dur":232205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1765228136483948, "dur":78103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136562095, "dur":137190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136699317, "dur":54001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136753347, "dur":151734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136905105, "dur":19729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136924889, "dur":39237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228136964155, "dur":135675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1765228137099856, "dur":617990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1765228137717861, "dur":310061, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1765228136237513, "dur":6175, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1765228136243689, "dur":2364, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1765228136249962, "dur":3042, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253007, "dur":150, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253163, "dur":130, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253294, "dur":124, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253537, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253705, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253832, "dur":622, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136254455, "dur":334, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136254790, "dur":376, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136255166, "dur":206, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136255373, "dur":882, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136256256, "dur":125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136256382, "dur":351, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136256734, "dur":144, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\Desktop\\Git\\Tycoon_Game\\Tycoon_Game\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136256909, "dur":134, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Playera8a56762-inputdata.json" }}
+,{ "pid":12345, "tid":3, "ts":1765228136253006, "dur":4089, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136257594, "dur":111204, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136369677, "dur":1446, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136369676, "dur":1448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136371142, "dur":1297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1765228136482934, "dur":79140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136562102, "dur":138224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136700349, "dur":53275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136753646, "dur":159351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136924815, "dur":53, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1765228136913029, "dur":11846, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136924904, "dur":39274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228136964204, "dur":134975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1765228137099201, "dur":618831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/level0" }}
+,{ "pid":12345, "tid":3, "ts":1765228137718042, "dur":309878, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1765228136237564, "dur":6131, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1765228136243697, "dur":205, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1765228136243903, "dur":2191, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1765228136246095, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1765228136253251, "dur":231337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1765228136484621, "dur":79808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136564491, "dur":175125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136739642, "dur":69535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136809205, "dur":109410, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136918651, "dur":21925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136940645, "dur":36276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228136976955, "dur":122966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1765228137099931, "dur":927983, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1765228136237539, "dur":6153, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1765228136243693, "dur":228, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1765228136243921, "dur":2159, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1765228136246089, "dur":18534, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1765228136246080, "dur":18545, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1765228136264665, "dur":220770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1765228136485464, "dur":78170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136563657, "dur":168334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136732018, "dur":22250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136754316, "dur":164356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136918699, "dur":6153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136924877, "dur":39274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228136964180, "dur":135431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1765228137099632, "dur":618420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1765228137718065, "dur":309895, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1765228136237617, "dur":6086, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1765228136243705, "dur":260, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1765228136243965, "dur":2099, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1765228136249902, "dur":265901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1765228136515829, "dur":143490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136659352, "dur":93349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136752728, "dur":139896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136892649, "dur":31285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136923972, "dur":39114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136963112, "dur":32500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1765228136995644, "dur":542508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":6, "ts":1765228137538162, "dur":489751, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1765228136237771, "dur":5973, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1765228136243746, "dur":243, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1765228136243989, "dur":2082, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1765228136251728, "dur":66681, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1765228136319345, "dur":166392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136485782, "dur":76263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136562075, "dur":138324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136700425, "dur":53647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136918629, "dur":90, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1765228136754096, "dur":164631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136918757, "dur":38211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136957007, "dur":20451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228136977483, "dur":122481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1765228137099974, "dur":927984, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1765228136237748, "dur":5992, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1765228136243742, "dur":214, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1765228136243956, "dur":2111, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1765228136246076, "dur":136, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1765228136246069, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1765228136251731, "dur":74185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1765228136325998, "dur":551162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":8, "ts":1765228136877209, "dur":45303, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1765228136922540, "dur":39562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1765228136962136, "dur":18470, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1765228136980629, "dur":57, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1765228136980688, "dur":14886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1765228136995615, "dur":542482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1765228137538109, "dur":489802, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1765228136237796, "dur":5952, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1765228136243749, "dur":146, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1765228136243895, "dur":2167, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1765228136249937, "dur":310578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":9, "ts":1765228136560543, "dur":122105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228136682671, "dur":70118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228136752814, "dur":142377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228136895249, "dur":28704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228136923985, "dur":39516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228137095697, "dur":72, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1765228136963524, "dur":132278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1765228137095830, "dur":622083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/level1.resS" }}
+,{ "pid":12345, "tid":9, "ts":1765228137717930, "dur":310031, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1765228136237828, "dur":5925, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1765228136243753, "dur":2326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1765228136246080, "dur":20375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1765228136266482, "dur":47665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1765228136314615, "dur":169234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1765228136483928, "dur":78075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136562086, "dur":137256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136699364, "dur":53933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136753329, "dur":151688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136905045, "dur":19634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136924710, "dur":39347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228136964105, "dur":131595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1765228137095727, "dur":621299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1765228137717037, "dur":310918, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1765228136237900, "dur":5866, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1765228136243767, "dur":2292, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1765228136246084, "dur":208, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1765228136246063, "dur":229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1765228136251444, "dur":248066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":11, "ts":1765228136499534, "dur":159428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136658985, "dur":93660, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136752669, "dur":139789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136892496, "dur":29945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136922526, "dur":39570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136962122, "dur":18693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1765228136980838, "dur":118024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":11, "ts":1765228137098886, "dur":619126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/level1" }}
+,{ "pid":12345, "tid":11, "ts":1765228137718021, "dur":309899, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1765228136237874, "dur":5883, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1765228136243758, "dur":2336, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1765228136246094, "dur":20414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1765228136266557, "dur":218902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1765228136485498, "dur":78985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136564521, "dur":179799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136744347, "dur":64908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136918587, "dur":151, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1765228136809280, "dur":109465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136918783, "dur":38997, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136957814, "dur":20472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228136978312, "dur":121689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1765228137100011, "dur":927951, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1765228136237926, "dur":5845, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1765228136243771, "dur":2287, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1765228136246067, "dur":552, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1765228136253013, "dur":3958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/app.info" }}
+,{ "pid":12345, "tid":13, "ts":1765228136257436, "dur":74262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":13, "ts":1765228136331737, "dur":1414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game.exe" }}
+,{ "pid":12345, "tid":13, "ts":1765228136333587, "dur":340942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":13, "ts":1765228136674556, "dur":78171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":13, "ts":1765228136752779, "dur":142458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1765228136895294, "dur":28868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1765228136924194, "dur":39550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1765228136963770, "dur":131948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1765228137095744, "dur":622122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/resources.assets" }}
+,{ "pid":12345, "tid":13, "ts":1765228137717879, "dur":310080, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1765228136237948, "dur":5828, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1765228136243776, "dur":2295, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1765228136246082, "dur":20273, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":14, "ts":1765228136246072, "dur":20284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1765228136266380, "dur":33835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1765228136300262, "dur":47859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1765228136348629, "dur":149532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136498204, "dur":159918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136658145, "dur":93871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136752052, "dur":140350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136892439, "dur":30079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136922555, "dur":39069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136961650, "dur":19004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1765228136980704, "dur":14994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":14, "ts":1765228136995731, "dur":122825, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":14, "ts":1765228137118567, "dur":909343, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1765228136237974, "dur":5806, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1765228136243780, "dur":2281, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1765228136251378, "dur":53854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":15, "ts":1765228136305281, "dur":342128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":15, "ts":1765228136647436, "dur":101767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":15, "ts":1765228136749247, "dur":97960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1765228136847244, "dur":74874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1765228136922155, "dur":39199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1765228136961393, "dur":18540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1765228136979976, "dur":1047899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136238003, "dur":5786, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1765228136243789, "dur":2276, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1765228136246074, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"D:\\unity\\2022.3.52f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":16, "ts":1765228136246066, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1765228136251720, "dur":46253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1765228136298038, "dur":186060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1765228136484124, "dur":79884, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136564043, "dur":168756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136732824, "dur":40237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136773088, "dur":145503, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136918611, "dur":53, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1765228136918667, "dur":21869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136940584, "dur":36319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228136976938, "dur":122758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1765228137099717, "dur":617798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Desktop/builds/TowerDefence/Alpha Build 1.5/Tycoon_Game_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":16, "ts":1765228137717527, "dur":310388, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1765228138040483, "dur":953, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
